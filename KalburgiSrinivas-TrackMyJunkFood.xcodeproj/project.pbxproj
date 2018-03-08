@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60DC003E2051072D009FA26B /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC003D2051072D009FA26B /* model.swift */; };
 		B8E5C80F204F6531007EDC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C80E204F6531007EDC0C /* AppDelegate.swift */; };
 		B8E5C811204F6531007EDC0C /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C810204F6531007EDC0C /* ReportViewController.swift */; };
 		B8E5C814204F6531007EDC0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E5C812204F6531007EDC0C /* Main.storyboard */; };
 		B8E5C816204F6531007EDC0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E5C815204F6531007EDC0C /* Assets.xcassets */; };
 		B8E5C819204F6531007EDC0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E5C817204F6531007EDC0C /* LaunchScreen.storyboard */; };
-		B8E5C823204F670B007EDC0C /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C822204F670B007EDC0C /* FoodData.swift */; };
-		B8E5C825204F6776007EDC0C /* FoodRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C824204F6776007EDC0C /* FoodRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60DC003D2051072D009FA26B /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		B8E5C80B204F6531007EDC0C /* KalburgiSrinivas-TrackMyJunkFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KalburgiSrinivas-TrackMyJunkFood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E5C80E204F6531007EDC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E5C810204F6531007EDC0C /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +24,6 @@
 		B8E5C815204F6531007EDC0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8E5C818204F6531007EDC0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8E5C81A204F6531007EDC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8E5C822204F670B007EDC0C /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
-		B8E5C824204F6776007EDC0C /* FoodRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +56,9 @@
 		B8E5C80D204F6531007EDC0C /* KalburgiSrinivas-TrackMyJunkFood */ = {
 			isa = PBXGroup;
 			children = (
-				B8E5C822204F670B007EDC0C /* FoodData.swift */,
-				B8E5C824204F6776007EDC0C /* FoodRecorder.swift */,
 				B8E5C80E204F6531007EDC0C /* AppDelegate.swift */,
 				B8E5C810204F6531007EDC0C /* ReportViewController.swift */,
+				60DC003D2051072D009FA26B /* model.swift */,
 				B8E5C812204F6531007EDC0C /* Main.storyboard */,
 				B8E5C815204F6531007EDC0C /* Assets.xcassets */,
 				B8E5C817204F6531007EDC0C /* LaunchScreen.storyboard */,
@@ -142,10 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E5C823204F670B007EDC0C /* FoodData.swift in Sources */,
+				60DC003E2051072D009FA26B /* model.swift in Sources */,
 				B8E5C811204F6531007EDC0C /* ReportViewController.swift in Sources */,
 				B8E5C80F204F6531007EDC0C /* AppDelegate.swift in Sources */,
-				B8E5C825204F6776007EDC0C /* FoodRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
