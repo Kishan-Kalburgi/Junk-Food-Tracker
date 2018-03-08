@@ -58,7 +58,7 @@ class FoodRecorder {
         for i in 0 ... Foods.count - 1 {
             repo += report(forItem: i) + "\n"
         }
-        return "Total calories consumed \(totalCalories())."
+        return "\(repo)\n\nTotal calories consumed \(totalCalories())."
     }
     
     func reset() {
