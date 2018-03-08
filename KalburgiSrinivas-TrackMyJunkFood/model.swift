@@ -47,13 +47,17 @@ class FoodRecorder {
         //        sum of the calories over
         //        all items
         var totalCalories = 0.0
-        for i in 0 ... Foods.count-1 {
+        for i in 0 ... Foods.count - 1 {
             totalCalories += Foods[i].Calories
         }
         return totalCalories
     }
     
     func combinedReport() -> String {
+        var repo = ""
+        for i in 0 ... Foods.count - 1 {
+            repo += report(forItem: i) + "\n"
+        }
         return "Total calories consumed \(totalCalories())."
     }
     

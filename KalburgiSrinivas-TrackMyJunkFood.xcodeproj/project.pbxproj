@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60DC003E2051072D009FA26B /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC003D2051072D009FA26B /* model.swift */; };
+		60DC004220511895009FA26B /* RecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC004120511895009FA26B /* RecordTableViewController.swift */; };
 		B8E5C80F204F6531007EDC0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C80E204F6531007EDC0C /* AppDelegate.swift */; };
 		B8E5C811204F6531007EDC0C /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E5C810204F6531007EDC0C /* ReportViewController.swift */; };
 		B8E5C814204F6531007EDC0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E5C812204F6531007EDC0C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		60DC003D2051072D009FA26B /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		60DC004120511895009FA26B /* RecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewController.swift; sourceTree = "<group>"; };
 		B8E5C80B204F6531007EDC0C /* KalburgiSrinivas-TrackMyJunkFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KalburgiSrinivas-TrackMyJunkFood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E5C80E204F6531007EDC0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E5C810204F6531007EDC0C /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		B8E5C80D204F6531007EDC0C /* KalburgiSrinivas-TrackMyJunkFood */ = {
 			isa = PBXGroup;
 			children = (
+				60DC004120511895009FA26B /* RecordTableViewController.swift */,
 				B8E5C80E204F6531007EDC0C /* AppDelegate.swift */,
 				B8E5C810204F6531007EDC0C /* ReportViewController.swift */,
 				60DC003D2051072D009FA26B /* model.swift */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DC004220511895009FA26B /* RecordTableViewController.swift in Sources */,
 				60DC003E2051072D009FA26B /* model.swift in Sources */,
 				B8E5C811204F6531007EDC0C /* ReportViewController.swift in Sources */,
 				B8E5C80F204F6531007EDC0C /* AppDelegate.swift in Sources */,

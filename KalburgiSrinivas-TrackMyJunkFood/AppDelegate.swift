@@ -12,9 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    static var model: FoodRecorder!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        AppDelegate.model = FoodRecorder()
         // Override point for customization after application launch.
         return true
     }

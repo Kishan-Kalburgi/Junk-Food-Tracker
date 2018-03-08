@@ -13,13 +13,13 @@
         <!--Items-->
         <scene sceneID="R04-2s-cjr">
             <objects>
-                <tableViewController id="BwY-Px-ci0" sceneMemberID="viewController">
+                <tableViewController id="BwY-Px-ci0" customClass="RecordTableViewController" customModule="KalburgiSrinivas_TrackMyJunkFood" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TZY-kl-SFG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="HVO-YG-Fpv" detailTextLabel="t2p-cn-GeT" style="IBUITableViewCellStyleValue1" id="zDF-lr-Tdd">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemIdentifier" textLabel="HVO-YG-Fpv" detailTextLabel="t2p-cn-GeT" style="IBUITableViewCellStyleValue1" id="zDF-lr-Tdd">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zDF-lr-Tdd" id="z1h-Vb-fad">
@@ -114,6 +114,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-cc-SIN">
+                                <rect key="frame" x="116" y="368" width="142" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.051712162899999997" blue="0.02641366304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Yr3-51-zeM"/>
@@ -142,7 +151,7 @@
         <!--ReportViewController-->
         <scene sceneID="3UP-PV-qeX">
             <objects>
-                <viewController id="4Is-vB-t1X" userLabel="ReportViewController" sceneMemberID="viewController">
+                <viewController id="4Is-vB-t1X" userLabel="ReportViewController" customClass="ReportViewController" customModule="KalburgiSrinivas_TrackMyJunkFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gpO-HY-Jnc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,6 +170,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" backgroundImage="reset"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="4Is-vB-t1X" eventType="touchUpInside" id="PcZ-TJ-cgw"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="k3B-ti-7na">
                                 <rect key="frame" x="33" y="170" width="309" height="477"/>
@@ -175,6 +187,9 @@
                         <viewLayoutGuide key="safeArea" id="hsi-qf-slT"/>
                     </view>
                     <navigationItem key="navigationItem" title="JF Tracker" id="QSJ-n6-1Bz"/>
+                    <connections>
+                        <outlet property="summary" destination="k3B-ti-7na" id="rFm-qj-jBR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQg-0U-MKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
