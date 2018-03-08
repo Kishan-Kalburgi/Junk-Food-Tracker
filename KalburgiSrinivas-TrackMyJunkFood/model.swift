@@ -43,14 +43,16 @@ class FoodRecorder {
         return "The calories consumed for \(Foods[i].Name) is \(getCalories(forItime: i))."
     }
     
+    
+    
     func totalCalories() -> Double {
         //        sum of the calories over
         //        all items
-        var totalCalories = 0.0
+        var totalCal = 0.0
         for i in 0 ... Foods.count - 1 {
-            totalCalories += Foods[i].Calories
+            totalCal += Foods[i].Calories
         }
-        return totalCalories
+        return totalCal
     }
     
     func combinedReport() -> String {

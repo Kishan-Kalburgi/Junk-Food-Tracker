@@ -28,6 +28,8 @@ class ReportViewController: UIViewController {
         summary.text! = AppDelegate.model.combinedReport()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
 
 
 }
