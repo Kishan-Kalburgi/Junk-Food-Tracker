@@ -50,7 +50,7 @@ class FoodRecorder {
         //        all items
         var totalCal = 0.0
         for i in 0 ... Foods.count - 1 {
-            totalCal += Foods[i].Calories
+            totalCal += getCalories(forItime: i)
         }
         return totalCal
     }
@@ -60,7 +60,7 @@ class FoodRecorder {
         for i in 0 ... Foods.count - 1 {
             repo += report(forItem: i) + "\n"
         }
-        return "\(repo)\n\nTotal calories consumed \(totalCalories())."
+        return repo + "\nTotal calories consumed \(totalCalories())."
     }
     
     func reset() {
