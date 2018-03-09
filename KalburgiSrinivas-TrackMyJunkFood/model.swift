@@ -48,7 +48,6 @@ class FoodRecorder {
     }
     
     
-    
     func totalCalories() -> Double {
         //        sum of the calories over
         //        all items
@@ -71,6 +70,10 @@ class FoodRecorder {
         for i in 0 ... Foods.count - 1 {
             Foods[i].Tally = 0
         }
+    }
+    
+    func addNewItem(name: String, calories: Double){
+        Foods.append(FoodData.init(Name: name, Calories: calories, Tally: 0))
     }
     
 }

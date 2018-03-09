@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="2yI-IC-qjC" kind="unwind" unwindAction="unwindFromTableWithSegue:" id="0oK-Nz-tLT"/>
+                                    <segue destination="2yI-IC-qjC" kind="unwind" identifier="increaseCount" unwindAction="unwindFromTableWithSegue:" id="0oK-Nz-tLT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1554" y="9"/>
         </scene>
-        <!--View Controller-->
+        <!--New Item Add View Controller-->
         <scene sceneID="y32-cw-Zqc">
             <objects>
-                <viewController id="xpL-dV-Lzc" sceneMemberID="viewController">
+                <viewController id="xpL-dV-Lzc" customClass="NewItemAddViewController" customModule="KalburgiSrinivas_TrackMyJunkFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5W9-p0-3pw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,13 +82,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iod-3z-4Pz">
                                 <rect key="frame" x="16" y="208" width="165" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. of Serving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2q-ZW-EYM">
-                                <rect key="frame" x="16" y="285" width="165" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -110,29 +103,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6j2-sg-3ag">
-                                <rect key="frame" x="238" y="290" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-cc-SIN">
+                                <rect key="frame" x="58" y="318" width="259" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.051712162899999997" blue="0.02641366304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-cc-SIN">
-                                <rect key="frame" x="116" y="368" width="142" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.051712162899999997" blue="0.02641366304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.96683966188944193" blue="0.69484294219763365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Add Item" image="add">
+                                    <color key="titleColor" red="1" green="0.051712162899999997" blue="0.02641366304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ctf-BY-7IP" kind="unwind" identifier="addItem" unwindAction="unwindForAddItemWithSegue:" id="Edr-au-48g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Yr3-51-zeM"/>
                     </view>
+                    <connections>
+                        <outlet property="calTF" destination="TaT-6D-eSb" id="C3m-fm-fL1"/>
+                        <outlet property="foodNameTF" destination="spF-SK-R5f" id="uz9-bY-ba6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ex-1O-OL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ctf-BY-7IP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2413.5999999999999" y="5.8470764617691158"/>
         </scene>
@@ -200,6 +193,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="100" height="100"/>
         <image name="record" width="128" height="128"/>
         <image name="reset" width="128" height="128"/>
     </resources>

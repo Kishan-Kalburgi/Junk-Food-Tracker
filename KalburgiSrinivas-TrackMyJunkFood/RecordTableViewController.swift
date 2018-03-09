@@ -42,7 +42,7 @@ class RecordTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemIdentifier", for: indexPath)
 
         cell.textLabel!.text = AppDelegate.model.Foods[indexPath.row].Name
-        cell.detailTextLabel!.text = "\(AppDelegate.model.Foods[indexPath.row].Calories)Cal"
+        cell.detailTextLabel!.text = "\(AppDelegate.model.Foods[indexPath.row].Calories)"
 
         return cell
     }
@@ -83,11 +83,15 @@ class RecordTableViewController: UITableViewController {
     }
     */
 
-    
+    @IBAction func unwindForAddItem(segue:UIStoryboardSegue){
+        tableView!.reloadData()
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "increaseCount"{
         AppDelegate.model.increaseTally(forItem: tableView.indexPathForSelectedRow!.row)
+        }
     }
 }
