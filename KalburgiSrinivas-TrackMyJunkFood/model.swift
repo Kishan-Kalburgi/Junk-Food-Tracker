@@ -26,6 +26,10 @@ class FoodRecorder {
         Foods.append(FoodData.init(Name: "Popcord", Calories: 106, Tally: 1))
         Foods.append(FoodData.init(Name: "Coke", Calories: 140, Tally: 1))
         Foods.append(FoodData.init(Name: "Potato", Calories: 152, Tally: 1))
+        //  Adding more food items
+        Foods.append(FoodData.init(Name: "Tomato", Calories: 128, Tally: 1))
+        Foods.append(FoodData.init(Name: "Carrot", Calories: 159, Tally: 1))
+        Foods.append(FoodData.init(Name: "BellPerpper", Calories: 132, Tally: 1))
     }
     
     func increaseTally(forItem i:Int) {

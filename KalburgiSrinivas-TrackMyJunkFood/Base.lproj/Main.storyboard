@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2yI-IC-qjC" kind="unwind" unwindAction="unwindFromTableWithSegue:" id="0oK-Nz-tLT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,6 +61,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efm-8e-EV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2yI-IC-qjC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1554" y="9"/>
         </scene>
